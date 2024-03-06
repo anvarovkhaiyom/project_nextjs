@@ -13,8 +13,6 @@ import { authenticate } from '@/app/lib/actions';
 import { FormProvider, useFormContext } from '../ui/FormContext';
 export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState(''); 
   const { formData, setFormData } = useFormContext();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
