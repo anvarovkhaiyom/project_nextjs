@@ -10,7 +10,7 @@ import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from '@/app/ui/button';
 import { useFormState, useFormStatus } from 'react-dom';
 import { authenticate } from '@/app/lib/actions';
-import { FormProvider, useFormContext } from '../ui/FormContext';
+import { FormProvider, useFormContext } from '@/app/ui/FormContext';
 export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
   const { formData, setFormData } = useFormContext();
