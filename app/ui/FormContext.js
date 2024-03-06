@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from 'react';
 
 const FormContext = createContext();
 
-export const useFormContext = () => {
+export function useFormContext(){
   return useContext(FormContext);
 };
 
