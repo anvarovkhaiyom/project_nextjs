@@ -14,7 +14,6 @@ import { FormProvider, useFormContext } from '@/app/ui/FormContext';
 export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
   const { formData, setFormData } = useFormContext();
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
